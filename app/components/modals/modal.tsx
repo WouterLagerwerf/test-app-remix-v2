@@ -11,7 +11,7 @@ import { ModalProps } from './modal.types'
  * @param children - The children of the modal
  * @returns 
  */
-const Modal: React.FC<ModalProps> = ({ title, subtitle, open, onClose, children }) => {
+const Modal = ({ title, subtitle, open, onClose, children }: ModalProps) => {
     if (!open) return null;
 
     return <Dialog open={open} onClose={onClose} className="relative z-10">
